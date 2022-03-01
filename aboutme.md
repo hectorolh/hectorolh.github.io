@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Acerca de mi
+subtitle: un poco de historia
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Soy un apasionado de la tecnologia. Comence en el mundo de linux desde los 12 y me mantengo en ello, tambien me gusta la musica:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- si hay errores en todo esto 
+- buscare algo que escribir
 
 What else do you need?
 

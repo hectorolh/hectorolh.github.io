@@ -15,7 +15,7 @@ author: Hector L H
 
 navbar-links:
   Acerca de mi: "aboutme"
-  Blog: "blogs"
+  # Resources:
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   #  - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
@@ -101,17 +101,17 @@ post_search: true
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#b2c2bf"
-navbar-text-col: "#404040"
+navbar-col: "#142d4c"
+navbar-text-col: "#ececec"
 navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#eaece5"
+page-col: "#385170"
+text-col: "#ececec"
 link-col: "#008AFF"
-hover-col: "#0085A1"
+hover-col: "#9fd3c7"
 footer-col: "#EAEAEA"
-footer-text-col: "#777777"
+footer-text-col: "#ececec"
 footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+footer-hover-col: "#9fd3c7"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour

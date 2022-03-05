@@ -1,16 +1,14 @@
 ---
 layout: page
 title: Acerca de mi
-subtitle: un poco de historia
+subtitle: un poco de historia...
 ---
-
-Soy un apasionado de la tecnologia. Comence en el mundo de linux desde los 12 y me mantengo en ello, tambien me gusta la musica:
-
-- si hay errores en todo esto 
-- buscare algo que escribir
-
-What else do you need?
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Comencé a ejercer como ingeniero de redes hace 10 años. A finales del 2021 comencé a trabajar en ciberseguridad. Trabajo en un centro de operaciones de seguridad revisando los incidentes y tomando decisiones para mejorar nuestras capacidades de detección asi como distintas tareas administrativas para mantener todos los sistemas apunto. Como parte de mis tareas diarias, trabajo mucho con inteligencia de amenazas, prevención y remediación de eventos cibernéticos. En mi tiempo libre realizo ejercicios para revisar y comprender técnicas de ataque como las descritas en MITRE ATT&CK Framework por ejemplo, esto a su vez me ayudan a comprender y mejorar la integración de mis herramientas de trabajo.
+
+Estoy muy familiarizado con tecnologías como soluciones integradas de antivirus, firewall, DLP o data loss prevention, Machine learning y otras. Una herramienta que considero crucial es SIEM, en variantes como QRadar/Microsoft Sentinel/McAfee, porque  permite realizar una correlación avanzada, integración de inteligencia de amenazas y, sin duda, agrega un gran valor a operaciones de día a día.
+
+Debo mencionar que poseo distintas certificaciones en ciberseguridad, pentesting, networking y la nube. De momento desarrollo mis habilidades en lenguajes de programación como Python y Javascript que me permiten desarrollar mis propias herramientas. En los últimos meses mi enfoque se esta centrando además, en ciberseguridad en la nube preparada para el W3, smart contracts y Solidity como lenguaje de programación. 
+

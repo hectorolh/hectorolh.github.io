@@ -2,9 +2,9 @@
 layout: post
 title: Blockchain, smart contracts y Zero Trust
 subtitle: Exploramos los aportes de W3 a la ciberseguridad
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+cover-img: /assets/img/Scifi.1920x1080.jpg
+thumbnail-img: /assets/img/Scifi.1920x1080.jpg
+share-img: /assets/img/Scifi.1920x1080.jpg
 tags: [Zero Trust, identidad,blockchain]
 ---
 

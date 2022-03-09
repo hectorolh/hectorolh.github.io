@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cyberseguridad y el zero trust
-subtitle: ¿que es Zero trust?
+title: El stack nativo de la nube hibrida
+subtitle: el zero trust aplicado al stack moderno
 cover-img: /assets/img/Scifi.1920x1080.jpg
 thumbnail-img: /assets/img/Scifi.1920x1080.jpg
 share-img: /assets/img/Scifi.1920x1080.jpg

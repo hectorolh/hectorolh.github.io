@@ -1,3 +1,13 @@
+---
+layout: post
+title: HTB Machine - Resolute
+subtitle: Writeup
+cover-img: /assets/img/Scifi.1920x1080.jpg
+thumbnail-img: /assets/img/Scifi.1920x1080.jpg
+share-img: /assets/img/Scifi.1920x1080.jpg
+tags: [ HTB, Hack the Box]
+---
+
 # we try to enumerate users and group domains
 
 rpcclient -U "" 10.10.10.169 -N -c "enumdomusers" | grep -oP '\[.*?\]' | grep -v "0x" | tr -d '[]' > users.txt

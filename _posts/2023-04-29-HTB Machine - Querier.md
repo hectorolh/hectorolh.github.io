@@ -1,3 +1,13 @@
+---
+layout: post
+title: HTB Machine - Querier
+subtitle: Writeup
+cover-img: /assets/img/Scifi.1920x1080.jpg
+thumbnail-img: /assets/img/Scifi.1920x1080.jpg
+share-img: /assets/img/Scifi.1920x1080.jpg
+tags: [ HTB, Hack the Box]
+---
+
 #We see that 445 (SMB) is available so we can perhaps get more info with crackmapexec.
 
 crackmapexec smb 10.10.10.125

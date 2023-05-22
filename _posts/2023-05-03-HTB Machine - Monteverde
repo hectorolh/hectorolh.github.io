@@ -1,3 +1,13 @@
+---
+layout: post
+title: HTB Machine - Monteverde
+subtitle: Writeup
+cover-img: /assets/img/Scifi.1920x1080.jpg
+thumbnail-img: /assets/img/Scifi.1920x1080.jpg
+share-img: /assets/img/Scifi.1920x1080.jpg
+tags: [ HTB, Hack the Box]
+---
+
 # Verify name of the machine, windows ver and domain name
 
 ❯ crackmapexec smb 10.10.10.172 

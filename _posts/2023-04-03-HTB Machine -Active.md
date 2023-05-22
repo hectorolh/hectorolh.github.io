@@ -1,11 +1,12 @@
 ---
 layout: post
 title: HTB Machine - Active
-subtitle: 
-cover-img: /assets/img/Scifi.1920x1080.jpg
-thumbnail-img: /assets/img/Scifi.1920x1080.jpg
-share-img: /assets/img/Scifi.1920x1080.jpg
-tags: [ HTB, Active Directory, Hack the Box]
+subtitle: Writeup
+cover-img: https://www.hackthebox.com/storage/avatars/5837ac5e28291146a9f2a8a015540c28.png
+thumbnail-img: https://www.hackthebox.com/storage/avatars/5837ac5e28291146a9f2a8a015540c28.png
+share-img: https://www.hackthebox.com/storage/avatars/5837ac5e28291146a9f2a8a015540c28.png
+tags: [ HTB, Active Directory, Hack the Box,Kerberos
+Network,Vulnerability Assessment,Active Directory,Outdated Software,Security Tools,Authentication,SMB,Impacket,Reconnaissance,Password Cracking,Kerberoasting,Default Credentials,Weak Permissions,Anonymous/Guest Access]
 ---
 
 #### Scanning the target we identify that is a Domain controller. Then we proceed to enumerate the shares with smbclient, we do this with a null session since we dont have credentials (flag -N)
@@ -199,5 +200,4 @@ psexec.py active.htb/Administrator:Ticketmaster1968@10.10.10.100 cmd.exe
 
 ```bash
 type C:\Users\Administrator\Desktop\root.txt
-b4589229e8c0992e58226301bf9f68d3
 ```

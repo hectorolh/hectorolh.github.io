@@ -8,7 +8,7 @@ share-img: https://www.hackthebox.com/storage/avatars/833a3b1f7f96b5708d19b6de08
 tags: [ HTB, Hack the Box,Network,Vulnerability Assessment,Forensics,Databases,Common Services,Application,Reversing,Traffic,LDAP,WinRM,Custom,SMB,.NET,C#,.NET,Reconnaissance,User Enumeration,Privilege Abuse,Packet Capture Analysis,Information Disclosure,Weak Cryptography,Hard-coded Credentials,LDAP Injection,Active Directory,Misconfiguration]
 ---
 
-##### SMB is open so we are going to check and find an interesting executable in one of the folders. 
+SMB is open so we are going to check and find an interesting executable in one of the folders. 
 ```zsh
 crackmapexec smb 10.10.11.174
 SMB         10.10.11.174    445    DC               [*] Windows 10.0 Build 20348 x64 (name:DC) (domain:support.htb) (signing:True) (SMBv1:False)

@@ -5,8 +5,7 @@ subtitle: Writeup
 cover-img: https://www.hackthebox.com/storage/avatars/5837ac5e28291146a9f2a8a015540c28.png
 thumbnail-img: https://www.hackthebox.com/storage/avatars/5837ac5e28291146a9f2a8a015540c28.png
 share-img: https://www.hackthebox.com/storage/avatars/5837ac5e28291146a9f2a8a015540c28.png
-tags: [ HTB, Active Directory, Hack the Box,Kerberos
-Network,Vulnerability Assessment,Active Directory,Outdated Software,Security Tools,Authentication,SMB,Impacket,Reconnaissance,Password Cracking,Kerberoasting,Default Credentials,Weak Permissions,Anonymous/Guest Access]
+tags: [ HTB, Hack the Box,Kerberos,Network,Vulnerability Assessment,Active Directory,Outdated Software,Security Tools,Authentication,SMB,Impacket,Reconnaissance,Password Cracking,Kerberoasting,Default Credentials,Weak Permissions,Anonymous/Guest Access]
 ---
 
 #### Scanning the target we identify that is a Domain controller. Then we proceed to enumerate the shares with smbclient, we do this with a null session since we dont have credentials (flag -N)

@@ -5,7 +5,7 @@ subtitle: Writeup
 cover-img: https://www.hackthebox.com/storage/avatars/78c5d8511bae13864c72ba8df1329e8d.png
 thumbnail-img: https://www.hackthebox.com/storage/avatars/78c5d8511bae13864c72ba8df1329e8d.png
 share-img: https://www.hackthebox.com/storage/avatars/78c5d8511bae13864c72ba8df1329e8d.png
-tags: [ HTB, Active Directory, Hack the Box, Network,Vulnerability Assessment,Active Directory,Source Code Analysis,Security Tools,Authentication,Kerberos,LDAP,Bloodhound,Powershell,Reconnaissance,Impersonation,Password Cracking,Password Spraying,Kerberos Abuse,Hash Capture,Information Disclosure,Misconfiguration]
+tags: [ HTB, Hack the Box, Network,Vulnerability Assessment,Active Directory,Source Code Analysis,Security Tools,Authentication,Kerberos,LDAP,Bloodhound,Powershell,Reconnaissance,Impersonation,Password Cracking,Password Spraying,Kerberos Abuse,Hash Capture,Information Disclosure,Misconfiguration]
 ---
 
 we start enumerating the smb but no much there.

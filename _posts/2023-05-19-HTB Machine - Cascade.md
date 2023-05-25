@@ -5,7 +5,7 @@ subtitle: Writeup
 cover-img: https://www.hackthebox.com/storage/avatars/64fef851357b8de1c4834093bf3426f2.png
 thumbnail-img: https://www.hackthebox.com/storage/avatars/64fef851357b8de1c4834093bf3426f2.png
 share-img: https://www.hackthebox.com/storage/avatars/64fef851357b8de1c4834093bf3426f2.png
-tags: [ HTB, Active Directory, Hack the Box, Powershell,LDAP,.NET,SQLite,TightVNC,WinRM,RPC,Web,Network,Vulnerability Assessment,Active Directory,Protocols,Cryptography,Security Tools,Reversing,Authentication,SMB,DNSPY,.NET,Reconnaissance,User Enumeration,Password Reuse,Clear Text Credentials,Information Disclosure,Weak Cryptography,Hard-coded Credentials]
+tags: [ HTB, Hack the Box, Powershell,LDAP,.NET,SQLite,TightVNC,WinRM,RPC,Web,Network,Vulnerability Assessment,Active Directory,Protocols,Cryptography,Security Tools,Reversing,Authentication,SMB,DNSPY,.NET,Reconnaissance,User Enumeration,Password Reuse,Clear Text Credentials,Information Disclosure,Weak Cryptography,Hard-coded Credentials]
 ---
 
 Enumerate smb and rpc. We found some users that we place in a file and then check if we can get a TGT. No luck. We check if there is any other info in the info of the users.

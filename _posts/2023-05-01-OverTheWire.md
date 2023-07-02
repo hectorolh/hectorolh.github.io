@@ -2,9 +2,9 @@
 layout: post
 title: OverTheWire 
 subtitle: Bandit
-cover-img: 
-thumbnail-img:
-share-img: 
+cover-img: assets/img/Overthewire-bandit.jpg
+thumbnail-img: assets/img/Overthewire-bandit.jpg
+share-img: assets/img/Overthewire-bandit.jpg
 tags: [Overthewire,Linux,Challenges]
 ---
 Here I provide the solutions to every level.

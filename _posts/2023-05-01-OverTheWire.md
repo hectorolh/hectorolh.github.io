@@ -1,5 +1,13 @@
-#OverTheWire
-##Bandit
+---
+layout: post
+title: OverTheWire 
+subtitle: Bandit
+cover-img: 
+thumbnail-img:
+share-img: 
+tags: [Overthewire,Linux,Challenges]
+---
+Here I provide the solutions to every level.
 
 ```zsh
 ssh bandit0@bandit.labs.overthewire.org:2220

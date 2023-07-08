@@ -1,4 +1,4 @@
-------
+---
 layout: post
 title: Generative AI kill the Spotify star.
 subtitle: Signs and landscape of generative AI in Music.

